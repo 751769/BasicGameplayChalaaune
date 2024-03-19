@@ -244,8 +244,8 @@ Transform:
   m_GameObject: {fileID: 475985833}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.8448, y: 0.2, z: 10}
-  m_LocalScale: {x: 9.443265, y: 1, z: 5}
+  m_LocalPosition: {x: 10.2368, y: 0.2, z: 10}
+  m_LocalScale: {x: 5.7491827, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 992285706}
@@ -360,7 +360,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 45
-  orthographic: 0
+  orthographic: 1
   orthographic size: 10
   m_Depth: -1
   m_CullingMask:
@@ -386,12 +386,60 @@ Transform:
   m_GameObject: {fileID: 534669902}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 16.24, y: 20.17, z: -6.33}
+  m_LocalPosition: {x: 16.32, y: 3.65, z: -7.76}
   m_LocalScale: {x: 1, y: 20, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &734437566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 734437568}
+  - component: {fileID: 734437569}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &734437568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734437566}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -51.972725, y: -88.37692, z: 91.77824}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &734437569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734437566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f66a324095d1a13499397aa6bca8dd42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalPrefabs:
+  - {fileID: 8605135521769945653, guid: 1e957f2ead88957499a8649be25b3634, type: 3}
+  - {fileID: 2392249144043272986, guid: 52678d78d30c36f428fdc1baae47c62f, type: 3}
+  - {fileID: 4609811533199812420, guid: 75bed579d0e3bce4997e7ded5d612bbe, type: 3}
 --- !u!1 &992285705
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,10 +689,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animal_Rooster_Brown
       objectReference: {fileID: 0}
-    - target: {fileID: 8254015361521799069, guid: 75bed579d0e3bce4997e7ded5d612bbe, type: 3}
-      propertyPath: speed
-      value: 15
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -780,10 +824,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animal_Chicken_Brown
       objectReference: {fileID: 0}
-    - target: {fileID: 6508675678476493296, guid: 52678d78d30c36f428fdc1baae47c62f, type: 3}
-      propertyPath: speed
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 7671760620388422145, guid: 52678d78d30c36f428fdc1baae47c62f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.218365
@@ -841,3 +881,4 @@ SceneRoots:
   - {fileID: 93607698749481400}
   - {fileID: 6798477061832720990}
   - {fileID: 3611148802041818046}
+  - {fileID: 734437568}
